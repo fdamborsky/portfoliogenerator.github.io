@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    background-image: url("../resources/images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 15vh;
+    width: 100vw;
+    background: url("../resources/images/waves.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: bottom;
+}
+
+footer {
+    position: absolute;
+    bottom: 15vh;
+    left: 2.5vw;
+}
+
+footer {
+    font-family: "Poppins";
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer ul {
+    background-color:#0B0B0B ;
+    padding: 0px 10px;
+    border-radius: 25px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 5px;
+}
+footer ul li img{
+    transition: all .25s linear;
+}
+
+footer ul li img:hover{
+    scale: 1.1;
+}
+
+form {
+    margin-top: 20px;
+    width: 675px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea {
+    font-family: "Poppins";
+    font-size: 20px;
+    color: black;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+form input:focus{
+    border: none;
+    outline: none;
+}
+
+.TitleAndName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#name {
+    width: 400px;
+    height: 50px;
+}
+#title {
+    width: 200px;
+    height: 50px;
+}
+
+#description {
+    height: 200px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Poppins";
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.reset {
+    background-color: transparent;
+    transition: all .25s linear ;
+}
+
+.reset:hover {
+    background-color: red;
+}
+
+.submit {
+    background-color: #28D466;
+    transition: all .25s linear ;
+}
+.submit:hover{
+    background-color: #1bc258;
+}
+
+.skills {
+    height: 100px;
+}
+
+.schoolSpecialization {
+    height: 75px;
+}

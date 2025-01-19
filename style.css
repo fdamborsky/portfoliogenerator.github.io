@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    background-image: url("resources/images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 15vh;
+    width: 100vw;
+    background: url("resources/images/waves.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: bottom;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%; 
+}
+
+nav h1{
+    color: #ffffff;
+    font-family: "Jersey 20";
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav a {
+    font-family: "Poppins";
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #0B0B0B;
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: all .25s linear;
+}
+
+nav a:hover{
+    background-color: #131313;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins";
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 96px;
+    font-weight: 900;
+}
+
+main a {
+    color: #E7AE5C;
+    text-decoration: none;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 900;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.25);
+    transition: all .25s linear;
+}
+
+main a:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25);
+}
+
+footer {
+    position: absolute;
+    bottom: 15vh;
+    left: 2.5vw;
+}
+
+footer {
+    font-family: "Poppins";
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer ul {
+    background-color:#0B0B0B ;
+    padding: 0px 10px;
+    border-radius: 25px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 5px;
+}
+footer ul li img{
+    transition: all .25s linear;
+}
+
+footer ul li img:hover{
+    scale: 1.1;
+}

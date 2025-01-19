@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../resources/icon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <form id="portfolioForm" >
+      <div class="TitleAndName">
+        <input type="text" id="name" name="name" placeholder="Jméno a příjmení:" maxlength="25" required>
+        
+        <input type="text" id="title" name="title" placeholder="Titul:" maxlength=5 required>
+      </div>
+        
+        <textarea id="description" name="description" placeholder="Popis:" required></textarea>
+
+        <input type="text" id="companyName" name="companyName" placeholder="Název firmy, ve které mám zkušenosti:" required>
+
+        <textarea id="companyExperience" name="companyExperience" placeholder="Zkušenosti s prací v dané firmě:" required></textarea>
+        
+        <textarea id="skills" name="skills" placeholder="Dovednosti, oddělené čárkou" required></textarea>
+
+        <input type="text" id="schools" name="schools" placeholder="Názvy vystudovaných škol (odděl čárkou)" required>
+
+        <textarea id="schoolSpecialization" name="schoolSpecialization" placeholder="Obory vzdělání:" required></textarea>
+
+        <div class="buttons">
+           <button class="reset">RESET</button>
+           <button class="submit" type="submit">GENERATE &<br>
+            DOWNLOAD </button>
+        </div>
+        
+       
+      </form>
+
+      <footer>
+        <p>SAY HELLO</p>
+        <ul>
+            <li><a href="https://www.instagram.com/"><img src="../resources/images/ig.svg" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/"><img src="../resources/images/linkedin.svg" alt=""></a></li>
+            <li><a href="mailto:fidamborsky@gmail.com"><img src="../resources/images/mail.svg" alt=""></a></li>
+        </ul>
+    </footer>
+
+      <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+      <script src="script.js"></script>
+
+</body>
+</html>
